@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-code"></i> Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="about" class="hero-section">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <!-- 3D Cartoon Boy Avatar Image -->
+                <img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" 
+                     alt="3D Cartoon Boy Profile Picture" 
+                     class="profile-img">
+            </div>
+            <div class="hero-text">
+                <span class="badge">Student & Developer</span>
+                <h1 id="user-name">Your Full Name</h1>
+                <p id="user-bio">Computer Science Student passionate about Software Engineering, Web Development, and Database Systems.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Technical Skills -->
+        <section id="skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Semantic markup, flexbox, grid layouts, and modern animations.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, ES6 syntax, and interactive web elements.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Database & SQL</h3>
+                    <p>Relational database architecture, queries, and data management.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Software Engineering</h3>
+                    <p>Object-oriented programming, algorithms, and data structures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Projects -->
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Personal Profile Website</h3>
+                        <p>An interactive, responsive single-page web app built with HTML5, CSS3, and JavaScript featuring 3D avatar design.</p>
+                        <span class="tag">HTML / CSS / JS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Database Management System</h3>
+                        <p>A relational database system modeled for managing student records, course enrolments, and evaluation metrics.</p>
+                        <span class="tag">SQL / Database</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Information</h2>
+            <div class="contact-card">
+                <p><i class="fa-solid fa-envelope"></i> Email: <span id="user-email">student@university.edu</span></p>
+                <p><i class="fa-solid fa-location-dot"></i> Location: Bengaluru, Karnataka, India</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Academic Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
